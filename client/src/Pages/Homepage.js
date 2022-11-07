@@ -28,7 +28,8 @@ function Homepage() {
         display="flex"
         justifyContent="center"
         p={3}
-        bg="white"
+        bg="#7e22ce"
+        color="white"
         w="100%"
         m="40px 0 15px 0"
         borderRadius="lg"
