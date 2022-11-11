@@ -48,7 +48,7 @@ const Signup = () => {
       console.log(name, email, password, pic);
       const config = {
         headers: {
-          "Content-type": "application/json",
+          "Content-Type": "application/json",
         },
       };
       const { data } = await axios.post(
