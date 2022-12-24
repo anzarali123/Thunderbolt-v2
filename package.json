@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon server/server.js",
+    "start": "node server/server.js"
   },
   "author": "Anzar Ali",
   "license": "ISC",
@@ -20,6 +19,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.0",
     "nodemon": "^2.0.20",
+    "react-router-dom": "^6.6.1",
     "socket.io": "^4.5.3"
   }
 }
