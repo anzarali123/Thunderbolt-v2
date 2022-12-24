@@ -24,14 +24,14 @@ import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import flash from "../../assets/flash.png";
 import { ChatState } from "../../Context/chatProvider";
 import ProfileModal from "./ProfileModal";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ChatLoading from "../ChatLoading";
 import UserListItem from "../UserAvatar/UserListItem";
 import axios from "axios";
 import { getSender } from "../../config/ChatLogics";
 
 const SideDrawer = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const [searchResult, setSearchResult] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -49,7 +49,7 @@ const SideDrawer = () => {
 
   const logoutHandler = () => {
     localStorage.removeItem("userInfo");
-    history.push("/");
+    navigate("/");
   };
 
   const toast = useToast();
