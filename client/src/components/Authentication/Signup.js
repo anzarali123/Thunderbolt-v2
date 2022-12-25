@@ -45,7 +45,6 @@ const Signup = () => {
       return;
     }
     try {
-      console.log(name, email, password, pic);
       const config = {
         headers: {
           "Content-Type": "application/json",

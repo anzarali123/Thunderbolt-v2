@@ -18,7 +18,7 @@ import ScrollableChat from "./ScrollableChat";
 import io from "socket.io-client";
 import "./styles.css";
 
-const ENDPOINT = "http:localhost:8000";
+const ENDPOINT = "http://localhost:8000/";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
