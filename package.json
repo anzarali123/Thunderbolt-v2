@@ -4,8 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server/server.js",
     "watch": "nodemon server/server.js",
-    "start": "node server/server.js"
+    "build": "cd client && npm run build"
   },
   "author": "Anzar Ali",
   "license": "ISC",
